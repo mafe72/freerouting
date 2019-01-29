@@ -55,6 +55,29 @@ For more information please use the online help in the board editor. From here y
 
 If you have further questions or want some feedback, please sent an Email to support@ FreeRouting.net or visit our forum.
 
+Enable Freerouting in Kicad 5.x:
+================================
+
+- Setup: 
+
+1) Place the kicadscript/freeroute.py file in %PROGRAMFILES%\KiCad\share\kicad\scripting\plugins (On Windows) or ~\.kicad\scripting\plugins (On Linux, not sure about OS X).
+
+2) Place freerouting/binaries/FreeRouting.jar in %APPDATA%\kicad\ (On Windows) or ~\.kicad\ (On Linux, not sure about OS X).
+
+3) In Pcbnew, under Tools -> External Plugins there should now be a Freeroute entry (If not, click the “Refresh Plugins” entry and try again).
+
+4) On nightlies(Or 5.1 when it releases), you can also go into the Preferences and under Action Plugins, you can set the plugin to show directly on the toolbar.
+
+- Workflow:
+
+1) Export DSN (File -> Export -> Specctra DSN…) using the default filename for your PCB (board.kicad_pcb would be board.dsn, for example).
+
+2) Click the Freeroute button/tool entry. This should launch the usual Freeroute GUI, with your design already loaded. NOTE: The KiCAD UI might be unresponsive at this point, as it’s waiting for Freeroute to finish running.
+
+3) Run your autoroute in Freeroute (Click the Autorouter button, wait, File -> Export Specctra Session File), then exit Freeroute
+
+4) Back in KiCAD, Import the session file (File -> Import -> Specctra Session…).
+
 Additional steps for users of CadSoft-Eagle:
 ============================================
 
