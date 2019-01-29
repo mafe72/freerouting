@@ -58,7 +58,7 @@ If you have further questions or want some feedback, please sent an Email to sup
 Enable Freerouting in Kicad 5.x:
 ================================
 
-- Setup: 
+### Setup: 
 
 1) Place the /kicadscript/freeroute.py file in %PROGRAMFILES%\KiCad\share\kicad\scripting\plugins (On Windows) or ~\.kicad\scripting\plugins (On Linux, not sure about OS X).
 
@@ -68,7 +68,7 @@ Enable Freerouting in Kicad 5.x:
 
 4) On nightlies(Or 5.1 when it releases), you can also go into the Preferences and under Action Plugins, you can set the plugin to show directly on the toolbar.
 
-- Workflow:
+### Workflow:
 
 1) Export DSN (File -> Export -> Specctra DSN…) using the default filename for your PCB (board.kicad_pcb would be board.dsn, for example).
 
