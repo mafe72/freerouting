@@ -60,9 +60,9 @@ Enable Freerouting in Kicad 5.x:
 
 - Setup: 
 
-1) Place the kicadscript/freeroute.py file in %PROGRAMFILES%\KiCad\share\kicad\scripting\plugins (On Windows) or ~\.kicad\scripting\plugins (On Linux, not sure about OS X).
+1) Place the /kicadscript/freeroute.py file in %PROGRAMFILES%\KiCad\share\kicad\scripting\plugins (On Windows) or ~\.kicad\scripting\plugins (On Linux, not sure about OS X).
 
-2) Place freerouting/binaries/FreeRouting.jar in %APPDATA%\kicad\ (On Windows) or ~\.kicad\ (On Linux, not sure about OS X).
+2) Place /binaries/FreeRouting.jar in %APPDATA%\kicad\ (On Windows) or ~\.kicad\ (On Linux, not sure about OS X).
 
 3) In Pcbnew, under Tools -> External Plugins there should now be a Freeroute entry (If not, click the “Refresh Plugins” entry and try again).
 
